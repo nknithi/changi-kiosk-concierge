@@ -130,7 +130,7 @@ export default function VideoEscalation({ open, onClose }) {
                 {/* Status Bar */}
                 <Box sx={{ position: 'absolute', top: 40, left: 40 }}>
                     <Typography variant="h4" color="white" fontWeight="bold">Voncierge Video Support</Typography>
-                    <Typography variant="subtitle1" color="rgba(255,255,255,0.7)">
+                    <Typography variant="body2" color="rgba(255,255,255,0.7)">
                         {status.includes('Connected') ? 'Live • Agent Sarah' : 'Ringing...'}
                     </Typography>
                 </Box>

@@ -32,11 +32,11 @@ export default function Dashboard({ onQuickAction }) {
         <Box sx={{ p: 3, display: 'flex', flexDirection: 'column', gap: 3, height: '100%' }}>
             
             {/* Header / Brand */}
-            <Box>
+            <Box sx={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-start', textAlign: 'left' }}>
                 <Typography variant="h4" color="primary" fontWeight="bold">
                     ChangiAI Kiosk
                 </Typography>
-                <Typography variant="subtitle1" color="text.secondary">
+                <Typography variant="body2" color="text.secondary">
                     Powered by Voncierge
                 </Typography>
             </Box>
@@ -69,11 +69,11 @@ export default function Dashboard({ onQuickAction }) {
                     {flights.map((f, idx) => (
                         <Box key={idx} sx={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
                             <Box>
-                                <Typography variant="subtitle1" fontWeight="bold">{f.flight}</Typography>
+                                <Typography variant="body1" fontWeight="bold">{f.flight}</Typography>
                                 <Typography variant="body2" color="text.secondary">to {f.dest}</Typography>
                             </Box>
                             <Box sx={{ textAlign: 'right' }}>
-                                <Typography variant="subtitle1">{f.time}</Typography>
+                                <Typography variant="body1">{f.time}</Typography>
                                 <Typography variant="body2" sx={{ color: f.color, fontWeight: 'bold' }}>{f.status}</Typography>
                             </Box>
                         </Box>
@@ -83,7 +83,7 @@ export default function Dashboard({ onQuickAction }) {
 
             {/* Quick Actions */}
             <Box>
-                <Typography variant="subtitle2" color="text.secondary" mb={1}>
+                <Typography variant="body2" color="text.secondary" fontWeight={600} mb={4}>
                     Quick Questions
                 </Typography>
                 <Box sx={{ display: 'flex', flexWrap: 'wrap', gap: 1 }}>
