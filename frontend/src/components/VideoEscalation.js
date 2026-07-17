@@ -39,6 +39,7 @@ export default function VideoEscalation({ open, onClose }) {
                 setStream(null);
             }
         }
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [open]);
 
     // Set stream source once the video element mounts

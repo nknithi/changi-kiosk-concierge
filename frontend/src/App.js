@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { ThemeProvider, CssBaseline, Box, Grid } from '@mui/material';
+import { ThemeProvider, CssBaseline, Box } from '@mui/material';
 import theme from './theme';
 import Dashboard from './components/Dashboard';
 import ChatInterface from './components/ChatInterface';

@@ -30,6 +30,7 @@ export default function ChatInterface({ quickQuery, onEscalate }) {
         if (quickQuery) {
             handleSend(quickQuery);
         }
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [quickQuery]);
 
     const handleSend = async (textOverride) => {
