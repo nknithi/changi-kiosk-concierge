@@ -18,6 +18,7 @@ out/
 
 # IDEs and Editors
 .idea/
+presentation_draft.md
 .vscode/
 *.suo
 *.ntvs*

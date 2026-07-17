@@ -49,4 +49,5 @@ It handles passenger FAQs and simulates a video-call transfer to a live human ag
 *   **Frontend**: Built with React 19 and Material UI. It uses a custom Burgundy and Gold theme to match Changi Airport's branding.
 *   **Backend**: Node.js/Express server typed with TypeScript. It communicates with the Google Gemini API.
 *   **AI Model**: Uses `gemini-flash-lite-latest` for low-latency, real-time responses.
+*   **Multilingual Support**: Handled natively by the Gemini model. No manual translation files (i18n) are required. The AI translates queries and matches them to our English knowledge base dynamically (verified with Chinese and Tamil queries).
 *   **Human Escalation**: If you ask to speak to a human or mention an emergency (e.g. *"I lost my passport"*), the AI will prompt you to click a button, which launches a mock live video-call feed that simulates Hipster's **Voncierge** support system.
