@@ -81,7 +81,7 @@ export default function VideoEscalation({ open, onClose }) {
                         overflow: 'hidden',
                         position: 'relative',
                         backgroundImage: status.includes('Connected') 
-                            ? 'url(https://images.unsplash.com/photo-1549923746-c502d488b3ea?auto=format&fit=crop&q=80&w=800&h=450)' 
+                            ? 'url(/agent_sarah.jpg)' 
                             : 'none',
                         backgroundSize: 'cover',
                         backgroundPosition: 'center',
